@@ -17,7 +17,7 @@ RUN python -m venv /app/venv
 COPY requirements.txt /app/
 RUN  pip install --no-cache-dir -r requirements.txt
 
-FROM cgr.dev/chainguard/python:latest@sha256:35d6025b288eb1c40ae631db77ed6cdd26c6f51d898428d8fc9989db7f29e784
+FROM cgr.dev/chainguard/python:latest@sha256:e5d8d4eb6975957350c8deb3afb09ea5328629d50a6916fc9863015fbfc0d8f8
 
 ENV PYTHONUNBUFFERED=1
 ENV PATH="/app/bin:$PATH"
